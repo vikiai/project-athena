@@ -81,21 +81,22 @@ git clone https://github.com/kasenvr/project-athena.git
 
 To compile a RELEASE version checkout the tag you need getting a list of all tags:
 ```bash
+cd project-athena
 git fetch -a
-git tags
+git tag
 ```
 
 Then checkout last tag with:
 ```bash
-git checkout tags/v0.79.0
+git checkout tags/1.0
 ```
 
 ### Compiling
 
 Create the build directory:
 ```bash
-mkdir -p hifi/build
-cd hifi/build
+mkdir -p build
+cd build
 ```
 
 Prepare makefiles:
